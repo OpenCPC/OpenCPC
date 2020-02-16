@@ -6,3 +6,17 @@ We are currently using the latest version of Ubuntu running in a VirtualBox to d
 **This section is incomplete.**
 
 Install the latest version of Ubuntu and VirtualBox and set it up. Install Visual Studio Code and PyLint, as well as enabling PyLint https://code.visualstudio.com/docs/python/linting .
+
+Your settings.json in VSCode should be something like this:
+
+```json
+{
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "editor.rulers": [
+        80
+    ],
+    "python.pythonPath": "/usr/bin/python3"
+}
+```
