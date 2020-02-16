@@ -14,6 +14,7 @@ Your settings.json in VSCode should be something like this:
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": ["--max-line-length", "100"],
     "editor.rulers": [
         80
     ],
