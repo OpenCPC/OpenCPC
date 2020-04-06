@@ -1,0 +1,528 @@
+#admin_page {
+    display: none;
+    color: white;
+}
+#admin_overlay {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50,50,50);
+    z-index: 20;
+    text-align: center;
+    padding-top: 80px;
+}
+#admin_overlayTitle {
+    color: white;
+}
+#admin_overlayLong {
+    color: white;
+}
+#admin_sidebar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 350px;
+    border-right: solid 1px rgb(60,60,60);
+    background: rgb(30,30,30);
+    overflow-x: hidden;
+    z-index: 9;
+}
+#admin_sidebar > div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 400px;
+    padding-right: 50px;
+    overflow-y: scroll;
+}
+#admin_sidebar > div > div {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:350px;
+    padding-top:120px;
+}
+#admin_competition_name {
+    font-size: 40px;
+    text-align: center;
+}
+#admin_time {
+    font-size: 30px;
+    text-align: center;
+}
+#admin_field {
+    position: fixed;
+    left: 350px;
+    top: 0px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100vh;
+    width: calc(100% - 350px);
+    background: rgb(20,20,20);
+    z-index: 5;
+}
+#admin_backlay {
+    line-height: calc(100vh - 80px);
+    vertical-align: center;
+    font-size: 30vh;
+    color: rgb(50,50,50);
+    text-align: center;
+}
+#admin_levels {
+    display: none;
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    border-radius: 20px;
+    width: calc(100% - 120px);
+    background-color: rgb(30,30,30);
+}
+#admin_levels>:nth-child(1) {
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(40,40,40);
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: solid 1px rgb(60,60,60);
+}
+#admin_levels_list {
+    padding: 0px 20px 20px 20px;
+}
+#admin_groups {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_groups>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_groups_list {
+    padding: 0px 20px 20px 20px;
+}
+#admin_control_panel {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_control_panel>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_control_panel_data {
+    padding: 0px 20px 20px 20px;
+    text-align:center;
+}
+#admin_control_panel_data > button {
+    font-size:15px;
+   display:inline-block;
+   margin-top:20px;
+}
+#admin_control_panel_data > span {
+    margin-top:20px;
+   display:inline-block;
+}
+#admin_control_panel_scoreboard_header {
+    font-size:20px;
+}
+#adminControlPanelStartingTimeDelay, #adminControlPanelDuration {
+    width: 75px;
+    color: black;
+}
+#admin_problems {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_problems>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_problems > button {
+    display:block;
+   width:400px;
+   padding:10px;
+   height:auto;
+   margin:20px;
+   margin-left:auto;
+   margin-right:auto;
+}
+#admin_problems_list {
+    padding: 0px 20px 20px 20px;
+}
+#admin_problem_general {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_problem_general>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+   display:block;
+}
+#admin_problem_general>:nth-child(1) > div {
+    display:inline-block;
+}
+#admin_edit_problemname {
+    text-align:center;
+   font-size:30px;
+   background-color:rgb(60,60,60);
+   border-radius:15px 15px 15px 15px;
+   display:inline-block;
+}
+.admin_problem_general_area {
+    padding:20px;
+   width:100%;
+}
+.admin_problem_general_area>:nth-child(1) {
+    font-size:30px;
+   text-align:left;
+}
+#admin_problem_general_inner {
+    margin-top:20px;
+   padding:20px;
+   width:calc(100%);
+   display:inline-block;
+   border-radius:15px;
+   color:white;
+   background-color:rgb(60,60,60);
+   font-size:20px;
+}
+.admin_problem_general_area>:nth-child(3) {
+    font-size:30px;
+   text-align:left;
+   margin-top:20px;
+}
+#admin_problem_images {
+    margin-top:20px;
+   font-size:14px;
+}
+#adminAddImageFields {
+    padding:5px;
+}
+#newProblemImage {
+    display:inline-block;
+   border-radius:5px;
+   padding:5px;
+   width:200px;
+}
+#adminAddImageFields > button {
+    display:inline-block;
+   width:auto;
+   padding:10px;
+   height:auto;
+   margin-left:20px;
+}
+.admin_problem_general_area>:nth-child(5) {
+    font-size:30px;
+   text-align:left;
+   margin-top:20px;
+}
+.submission_processing_server_settings_editor {
+    margin-top:20px;
+   font-size:20px;
+}
+.submission_processing_server_settings_editor > li {
+    padding: 5px;
+}
+#admin_problem_general_runtime, #admin_problem_general_memory {
+    border-radius:5px;
+   text-align:center;
+   background-color:rgb(60,60,60);
+}
+.admin_problem_general_area>:nth-child(7) {
+    font-size:30px;
+   text-align:left;
+   margin-top:20px;
+}
+#admin_problem_level {
+    font-size:20px;
+   color:black;
+}
+.admin_problem_general_area>:nth-child(9) {
+    text-align:center;
+   padding:20px;
+   border:solid 1px #777777;
+   cursor:pointer;
+   border-radius:4px;
+   margin-top:20px;
+}
+#admin_problem_cases {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_problem_cases>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_problem_cases>:nth-child(2) {
+    text-align: center;
+}
+#admin_problem_cases>:nth-child(2) > button {
+    display:inline-block;
+   width:400px;
+   padding:10px;
+   height:auto;
+   margin:20px 20px 0px 20px;
+}
+#admin_problem_cases_list {
+    padding: 20px;
+}
+#admin_case {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_case>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_case_inner {
+    padding: 20px;
+}
+.admin_case_inner_header {
+    display:block;
+   font-size:20px;
+}
+#editInput, #editOutput {
+    width:100%;
+   background-color:rgb(40,40,40);
+   font-size:20px;
+   color:white;
+}
+#editValue {
+    display:inline-block;
+   font-size:20px;
+   width:50px;
+   text-align:right;
+   color:black;
+}
+.admin_case_return {
+    text-align:center;
+   padding:20px;
+   border:solid 1px #777777;
+   cursor:pointer;
+   border-radius:4px;
+}
+#admin_competitors {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_competitors>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_competitors_list {
+    padding:20px;
+   text-align:center;
+}
+#admin_competitor_info {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#competitor_username {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+   display:block;
+}
+.admin_competitor_info_overview {
+    padding:20px;
+   width:100%;
+}
+.admin_competitor_info_overview>:nth-child(1) {
+    font-size:30px;
+   text-align:left;
+}
+.admin_competitor_info_overview_typical {
+    display:block;
+   text-align:left;
+}
+.admin_competitor_info_overview_typical>:nth-child(1) {
+    display:inline-block;
+}
+#competitors_score, #competitors_totalsubs {
+    display:inline-block;
+   margin-left:10px;
+}
+.admin_competitor_info_overview_detailed_stats {
+    font-size:30px;
+   text-align:left;
+   margin-top:30px;
+}
+#competitor_detailed_stats {
+    display:block;
+}
+#admin_submissions {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_submissions>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_submissions_list {
+    padding:20px;
+   text-align:center;
+}
+#admin_results {
+    display:none;
+   color:white;
+   margin-left:60px;
+   margin-right:60px;
+   margin-top:60px;
+   border-radius:20px;
+   width:calc(100% - 120px);
+   background-color:rgb(30,30,30);
+}
+#admin_results>:nth-child(1) {
+    padding:5px;
+   text-align:center;
+   font-size:30px;
+   background-color:rgb(40,40,40);
+   border-radius:20px 20px 0px 0px;
+   border-bottom:solid 1px rgb(60,60,60);
+}
+#admin_results_list {
+    padding:20px;
+   text-align:center;
+}
+#editCompPage {
+    position:fixed;
+   box-sizing:border-box;
+   height:100%;
+   width:auto;
+   z-index:11;
+   margin-left:350px;
+   background:rgb(30,30,30);
+   text-align:center;
+}
+#adminFieldSubShadow {
+    cursor:pointer;
+   display:none;
+   position:fixed;
+   left:0px;
+   top:0px;
+   width:100vw;
+   height:100vh;
+   background-color:rgba(0,0,0,0.9);
+   z-index:11;
+}
+#adminFieldSubShadow > div {
+    position:fixed;
+   width:calc(350px - 20px);
+   top:calc(50vh - 30px);
+   font-size:60px;
+   color:white;
+   text-align:center;
+}
+#adminFieldSub {
+    display:none;
+   position:fixed;
+   left:350px;
+   top:0px;
+   padding-top:80px;
+   box-sizing:border-box;
+   overflow-y:scroll;
+   height:100vh;
+   width:calc(100% - 350px);
+   z-index:11;
+}
+#adminFieldSub > div {
+    line-height:calc(100vh - 80px);
+   vertical-align:center;
+   font-size:30vh;
+   color:rgb(30,30,30);
+   text-align:center;
+}

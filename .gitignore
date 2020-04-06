@@ -1,0 +1,6 @@
+*.pyc
+.vscode
+**/config.json
+hub_config.json
+sps_config.json
+web/config.php

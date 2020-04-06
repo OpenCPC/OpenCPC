@@ -1,0 +1,168 @@
+* {
+	font-family:"Arial";
+}
+
+.linkWhite, .linkWhite:active, .linkWhite:link, .linkWhite:visited, .linkWhite:hover {
+    color: white;
+}
+
+table {
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+th {
+    text-align: center;
+}
+
+td, th {
+    padding: 1px;
+}
+
+body {
+    background-color: transparent;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.glyphicon-trash
+{
+    cursor: pointer;
+}
+
+/* http://www.formauri.es/personal/pgimeno/temp/numbering-code-demo.html */
+
+pre.code {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+    pre.code::before {
+        counter-reset: linenum;
+    }
+
+    pre.code span.tr {
+        display: table-row;
+        counter-increment: linenum;
+    }
+
+    pre.code span.th {
+        display: table-cell;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+    }
+
+        pre.code span.th::before {
+            content: counter(linenum);
+            text-align: right;
+            display: block;
+        }
+
+    pre.code span.th {
+        width: 4em;
+    }
+
+    pre.code code {
+        display: table-cell;
+    }
+
+pre.code {
+    border: solid 1px black;
+    background-color: white;
+}
+
+    pre.code span.th {
+        background: #f0f0f0;
+        padding: 3px;
+        padding-top: 0px;
+        border-right: solid 1px silver;
+        border-top: solid 1px silver;
+    }
+
+        pre.code span.th::before {
+            font-size: 90%;
+            color: #999;
+        }
+
+    pre.code span.tr.first-row span.th {
+        border-top: none;
+    }
+
+    pre.code code {
+        padding: 3px;
+    }
+
+    pre.code span:nth-child(even) code {
+        background: #f0f8ff;
+    }
+
+    pre.code span.th::before {
+        content: counter(linenum) ".";
+    }
+
+    @keyframes submissionRowAnimation {
+        0% {
+          background-position: -50% 0%;
+        }
+        50% {
+          background-position: 50% 0%;
+        }
+        100% {
+          background-position: 150% 0%;
+        }
+        
+      }
+
+      @keyframes submissionRowAnimationStop {
+        0% {
+         background-color: rgba(51, 51, 153,1.0);
+        }
+        100% {
+         background-color: rgba(51, 51, 153,0.0);
+        }
+        
+      }
+
+      
+      @keyframes fieldNewSubmissionAnimation {
+        0% {
+            background-position: 0% -200% ;
+        }
+        100% {
+            background-position: 0% 200% ;
+        }
+        
+      }
+      
+      .submissionLiveCompiling {
+         background-color: #333399;
+         background-image: linear-gradient(50deg, #333399, #333399, #333399,#6666ff, #333399,#333399, #333399);
+         background-size: 200% 100%;
+        animation: submissionRowAnimation 0.5s linear 0s infinite normal;
+      }
+
+      .submissionLiveGrading {
+        background-color: #333399;
+        background-image: linear-gradient(-50deg, #333399, #333399, #333399,#6666ff, #333399,#333399, #333399);
+        background-size: 200% 100%;
+       animation: submissionRowAnimation 5s linear 0s infinite reverse;
+     }
+
+     .submissionLiveStop {
+        animation: submissionRowAnimationStop 1s ease 0s 1 normal;
+     }
+
+     .fieldNewSubmission {
+        background-image: linear-gradient(0deg, rgb(20,20,20), #333399,#333399,#333399, rgb(20,20,20)) ;
+        background-size: 100% 200% ;
+        background-position: 0% 200% ;
+       animation: fieldNewSubmissionAnimation 0.5s linear 0s 1 reverse;
+       background-repeat:no-repeat;
+     }

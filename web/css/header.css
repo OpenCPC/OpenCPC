@@ -1,0 +1,15 @@
+#web_header {
+    color:white;position:fixed;left:0px;top:0px;width:100%;padding:20px;background-color:rgb(102, 144, 182);margin:0px;z-index:30;box-shadow:0px 0px 5px black;
+}
+#web_header > span {
+    font-size:40px;position:absolute;left:10px;top:10px;color:rgb(157, 195, 232);text-shadow:black 3px 3px 5px;margin-right:18px;
+}
+.header_info {
+    font-size:20px;text-align:center;
+}
+.header_buttons {
+    position:absolute;right:15px;top:12px;padding:0px;margin:0px;
+}
+.header_buttons > button {
+    color:black;
+}

@@ -1,0 +1,185 @@
+#competition_page {
+    display:none;color:white;
+}
+
+#competition_overlay {
+    position:fixed;left:0px;top:0px;width:100%;height:100%;background-color:rgb(50,50,50);z-index:20;
+    text-align:center;
+    padding-top: 80px;
+}
+
+#fieldSub {
+    display:none;position:fixed;left:350px;top:0px;padding-top:80px;box-sizing:border-box;overflow-y:scroll;height:100vh;width:calc(100% - 350px);z-index:11;
+}
+
+#fieldSub > div {
+    line-height:calc(100vh - 80px);vertical-align:center;font-size:30vh;color:rgb(30,30,30);text-align:center;
+}
+
+#fieldSubShadow {
+    cursor:pointer;display:none;position:fixed;left:0px;top:0px;width:100vw;height:100vh;background-color:rgba(0,0,0,0.9);z-index:11;
+}
+
+#fieldSubShadow > div {
+    position:fixed;width:calc(350px - 20px);top:calc(50vh - 30px);font-size:60px;color:white;text-align:center;
+}
+
+#backlay {
+    line-height:calc(100vh - 80px);vertical-align:center;font-size:30vh;color:rgb(50,50,50);text-align:center;
+}
+
+#problemlist {
+    display:none;
+}
+
+#problemlist > div {
+    color:white;margin-left:60px;margin-right:60px;margin-top:60px;border-radius:20px;width:calc(100% - 120px);background-color:rgb(30,30,30);
+}
+
+.problemlist_title {
+    padding:5px;text-align:center;font-size:30px;background-color:rgb(40,40,40);border-radius:20px 20px 0px 0px;border-bottom:solid 1px rgb(60,60,60);
+}
+
+.problemlist_key_container {
+    text-align:center;padding-top:20px;
+}
+.problemlist_key_container > div {
+    box-sizing:content-box;position:relative;border-radius:4px;padding:4px 4px 4px 24px;background-color:rgb(40,40,40);border:solid 1px rgb(60,60,60);display:inline-block;height:16px;
+}
+
+.problemlist_key_container > div > div {
+    position:absolute;left:4px;top:4px;width:16px;height:16px;border-radius:100%;
+}
+
+.problemlist_unattempted {
+    background-color:#FFFFFF;
+}
+
+.problemlist_0p {
+    background-color:#EE7700;
+}
+
+.problemlist_50p {
+    background-color:#EEEE00;
+}
+
+.problemlist_ge50p {
+    background-color:#00ADFF;
+}
+
+.problemlist_100p {
+    background-color:#00EE00;
+}
+
+#problemListInner {
+    padding:20px 40px 20px 40px;text-align:left;
+}
+
+#problemListInner > table > tr > td:nth-child(1) {
+    padding:5px;
+}
+
+#problemListInner > table > tr > td:nth-child(2) {
+    width:100%;
+}
+
+#problemListInner > table > tr > td:nth-child(2) > div {
+    height:1px;width:100%;background-color:rgb(60,60,60);
+}
+
+#scoreboard {
+    display: none;
+}
+
+#scoreboard > div {
+    color:white;margin-left:60px;margin-right:60px;margin-top:60px;border-radius:20px;width:calc(100% - 120px);background-color:rgb(30,30,30);
+}
+
+.scoreboard_header_title {
+    padding:5px;text-align:center;font-size:30px;background-color:rgb(40,40,40);border-radius:20px 20px 0px 0px;border-bottom:solid 1px rgb(60,60,60);
+}
+
+#scoreboardInner {
+    padding:20px;text-align:center;
+}
+
+#field {
+    position:fixed;left:350px;top:0px;padding-top:80px;box-sizing:border-box;overflow-y:scroll;height:100vh;width:calc(100% - 350px);background-color:rgb(20,20,20);z-index:5;
+}
+
+#allSubmissions {
+    display: none;
+}
+#allSubmissions > div {
+    color:white;margin-left:60px;margin-right:60px;margin-top:60px;border-radius:20px;width:calc(100% - 120px);background-color:rgb(30,30,30);
+}
+#allProblemSubmissions {
+    padding:20px;
+}
+
+.all_submissions_header_title {
+    padding:5px;text-align:center;font-size:30px;background-color:rgb(40,40,40);border-radius:20px 20px 0px 0px;border-bottom:solid 1px rgb(60,60,60);
+}
+
+#competition_overlayTitle, #competition_overlayLong {
+    color:white;
+}
+
+#competition_overlay_last_30_swipe {
+    text-align:center;position:absolute;padding-top:80px;left:0px;top:0px;width:100vw;height:100vh;background-color:black;display:none;
+}
+
+#competition_overlay_last_30_swipe > div {
+    position:absolute;height:calc(180px);top:calc(50% - 90px);width:100%;left:0px; 
+}
+
+.col30_title {
+    font-size:50px;line-height:1;
+}
+
+.col30_between {
+    position:relative;width:100%;height:80px;line-height:1;
+}
+
+.col30_between > :nth-child(1) {
+    position:absolute;left:10%;top:calc(40px - 2.5px);height:5px;width:80%;background-color:white;
+}
+.col30_between > :nth-child(2) {
+    position:absolute;left:0px;top:0px;width:100%;text-align:center;font-size:80px;
+}
+
+#competition_overlay_last_30_countdown {
+    padding-left:20px;padding-right:20px;background-color:black;display:inline-block;
+}
+
+.col30_title_s {
+    font-size:50px;line-height:1;
+}
+
+#sidebar {
+    color:white;position:fixed;left:0px;top:0px;height:100vh;box-sizing:border-box;width:350px;border-right:solid 1px rgb(60,60,60);background:rgb(30,30,30);overflow-x:hidden;z-index:9;
+}
+
+#sidebar > div {
+    position:absolute;left:0px;top:0px;height:100vh;width:400px;padding-right:50px;overflow-y:scroll;
+}
+
+.competition_title_area {
+    text-align:center;
+}
+
+#competition_name {
+    font-size:40px;display:block;
+}
+#competition_time {
+    font-size:30px;display:block;
+}
+#sidebar > div > :nth-child(1) {
+    position:absolute;left:0px;top:0px;width:350px;padding-top:120px;
+}
+.siderbar_title_group {
+    color:white;padding-top:0px;margin-top:0px;margin-bottom:0px;
+}
+.sidebar_title_division {
+    color:white;padding-top:0px;margin-top:0px;
+}
