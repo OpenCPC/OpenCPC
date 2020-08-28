@@ -251,7 +251,7 @@ async def getAllSubmissions(params, uobj):
     await uobj.ws.send(json.dumps ( {"func":"getAllSubmissions", "subs":results, "count":len(results)} ))
 
 async def getPopUp(params, uobj):
-    if not(await isLoggedIn(params["uid"], uobj)) or not(await inComp(params["cid"], uobj)) or not(await compStatus(params["cid"], uobj) == 1):
+    if not(await isLoggedIn(params["uid"], uobj)) or not(await inComp(params["cid"], uobj)) or not(await compStatus(params["cid"], uobj) == CompetitionStatus.DURING):
         return
     sql = uobj.storage.sql
     tmp = await sql.execute("SELECT "+str(re.sub('[^a-zA-Z]','',params["get"]))+", problemid FROM submissions WHERE id=%s", [params["subid"]])
